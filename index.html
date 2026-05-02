@@ -1,5 +1,10 @@
 <html>
   <body>
     <h1 style="font-family:'Segoe UI'; color:silver">Bakım molası</h1>
+    <br>
+    <h2>IP Adresin : </h2>
+    <script>
+      fetch("https://api.ipify.org/").then(a => a.text()).then(b => document.querySelector("h2").innerHTML += b)
+    </script>
   </body>
 </html>
